@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Percona Development <info@percona.com>
 
-RUN yum install -y https://github.com/sysown/proxysql/releases/download/v1.3.1/proxysql-1.3.1-1-centos7.x86_64.rpm
+RUN yum install -y https://github.com/sysown/proxysql/releases/download/v1.3.3/proxysql-1.3.3-1-centos7.x86_64.rpm
 RUN rpmkeys --import https://www.percona.com/downloads/RPM-GPG-KEY-percona
 RUN yum install -y http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm
 RUN yum install -y Percona-Server-client-56
