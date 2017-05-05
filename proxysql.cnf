@@ -2,14 +2,14 @@ datadir="/var/lib/proxysql"
 
 admin_variables =
 {
-	admin_credentials="admin:admin"
+	admin_credentials="admin:GE6v6NFuHVUtEE"
 	mysql_ifaces="0.0.0.0:6032"
 	refresh_interval=2000
 }
 
 mysql_variables=
 {
-	threads=2
+	threads=4
 	max_connections=2048
 	default_query_delay=0
 	default_query_timeout=10000

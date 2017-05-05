@@ -9,4 +9,4 @@ if [ -z "$DISCOVERY_SERVICE" ]; then
         exit 1
 fi
 
-/usr/bin/proxysql --initial -f -c /etc/proxysql.cnf 
+/usr/bin/proxysql -f -c /etc/proxysql.cnf 
