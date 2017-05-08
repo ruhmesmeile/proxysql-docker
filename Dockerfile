@@ -2,6 +2,7 @@ FROM centos:7
 MAINTAINER Percona Development <info@percona.com>
 
 RUN rpmkeys --import https://www.percona.com/downloads/RPM-GPG-KEY-percona
+RUN yum install -y which && yum install -y sudo
 RUN yum install -y http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm
 RUN yum install -y proxysql
 RUN yum install -y Percona-Server-client-57
